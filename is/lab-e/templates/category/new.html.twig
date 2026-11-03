@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nowa kategoria{% endblock %}
+
+{% block body %}
+    <main class="container py-5">
+        <div class="page-header">
+            <h1 class="h2 mb-1">Nowa kategoria</h1>
+            <p class="text-body-secondary mb-0">Uzupełnij formularz, aby dodać kategorię.</p>
+        </div>
+
+        <div class="card p-4 mb-3">
+            {{ include('category/_form.html.twig') }}
+        </div>
+
+        <a href="{{ path('app_category_index') }}">Powrót do listy</a>
+    </main>
+{% endblock %}
